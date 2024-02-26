@@ -137,13 +137,13 @@ class FlowerPowerX(IStrategy):
 
 def find_pivot_highs(dataframe, leftbars, rightbars):
     """Find pivot highs in the dataframe."""
-    highs = dataframe['high']
+    highs = dataframe['high'].shift(rightbars)
     pivot_highs = highs[(highs.shift(leftbars) < highs) & (highs.shift(-rightbars) < highs)]
     return pivot_highs
 
 def find_pivot_lows(dataframe, leftbars, rightbars):
     """Find pivot lows in the dataframe."""
-    lows = dataframe['low']
+    lows = dataframe['low'].shift(rightbars)
     pivot_lows = lows[(lows.shift(leftbars) > lows) & (lows.shift(-rightbars) > lows)]
     return pivot_lows
 

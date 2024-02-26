@@ -1,9 +1,9 @@
 # FlowerPowerX
 
 FlowerPowerX is a Freqtrade-based cryptocurrency trading strategy, designed to leverage technical analysis for automated trading. This repository includes tools to optimize and evaluate trading performance comprehensively.
-Features
 
 * Utilizes Head & Shoulders patterns for market trend reversals.
+* This strategy is in development and highly experimental dont expect to get the following results in live trading at this stage.
 
 ## Backtesting results of the last 3 years
 
